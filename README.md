@@ -9,7 +9,7 @@ Provided the database of a company, AI Chatbot will answer questions about the c
    cd AIEmulator
 4) Create 'secure.env' file inside of folder. Indicate inside of file:
    
-   ## OPENAI_API_KEY=(insert OpenAI API key here)
+   # OPENAI_API_KEY=(insert OpenAI API key here)
    Necessary: OpenAI subscription needed for API key credits. Once having the API key, copy from OpenAI, and then insert
 
 6) Run Streamlit command in terminal
