@@ -12,5 +12,6 @@ AI Emulator Chatbot creating using Python, Langchain, SQLite3, Streamlit, and Op
    'streamlit run main.py'
 6) Chatbot will open in localhost with new UI
    
-   <img width="1280" height="632" alt="Screenshot 2026-09-21 211606" src="https://github.com/user-attachments/assets/69b6e6dd-f3f1-40ad-b7bd-e27a4da5780a" />
+<img width="1280" height="632" alt="Screenshot 2026-09-21 211606" src="https://github.com/user-attachments/assets/69b6e6dd-f3f1-40ad-b7bd-e27a4da5780a" />
 
+<img width="1280" height="460" alt="image" src="https://github.com/user-attachments/assets/d44a21cb-208d-46ac-987f-a54cedd1b631" />
