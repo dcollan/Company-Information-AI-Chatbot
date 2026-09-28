@@ -7,7 +7,7 @@ from database import get_langchain_db
 import os
 
 # Initialize OpenAI and validate API key
-load_dotenv("secure.env")
+load_dotenv("secure.env", override=True)
 print("API key found:", os.getenv("OPENAI_API_KEY") is not None)
 if not (api_key := os.getenv("OPENAI_API_KEY")):
     st.error("Please set OPENAI_API_KEY in .env")
@@ -16,11 +16,19 @@ if not (api_key := os.getenv("OPENAI_API_KEY")):
 # Setup LangChain components
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0, openai_api_key=api_key)
 # Initialize SQL agent with the database toolkit
-agent = create_sql_agent(llm=llm, toolkit=SQLDatabaseToolkit(db=get_langchain_db(), llm=llm), verbose=True)
+agent = create_sql_agent(
+    llm=llm,
+    toolkit=SQLDatabaseToolkit(
+        db=get_langchain_db(),
+        llm=llm
+    ),
+    verbose=True,
+    handle_parsing_errors=True
+)
 
 # Setup Streamlit UI
-st.title("💬 Ask the Chatbot!")
-st.write("Ask it any exciting question.")
+st.title("💬 Company Information Chatbot")
+st.write("Ask questions about the company.")
 
 # Initialize session state for storing results
 if 'result' not in st.session_state:
