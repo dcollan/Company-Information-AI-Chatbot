@@ -1,5 +1,5 @@
 # AI-Emulator-Chatbot
-AI Emulator Chatbot creating using Python, Langchain, SQLite3, Streamlit, and OpenAI API Key. Chatbot is designed to query databases using Natural Language Processing Units.
+Provided the database of a company, AI Chatbot will answer questions about the company for you. Created using Python, Langchain, SQLite3, Streamlit, and OpenAI API Key. Chatbot is designed to query through the database using Natural Language Processing.
 
 # How to Run
 1) Clone repository
